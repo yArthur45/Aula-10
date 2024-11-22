@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+body
+{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header
+{
+    margin: 0;
+    padding : 0 20px;
+    width: 100;
+    height: 100px;
+    background-color: rgb(96,0,0);
+    color : white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header a{
+  color : white;
+  font-size: 20px;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header a:hover{
+  text-decoration: underline;
 }
 
-.App-link {
-  color: #61dafb;
+header a + a{
+  margin-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.conteudo
+{
+    margin : 10px;
+    font-family: sans-serif;
+    font-size: 20px;
 }
+
+.destaque
+{
+  width: 500px;
+  margin : 20px auto;
+  border: 1px solid black;
+  padding: 20px;
+  box-shadow: 0px 0px 10px black;  
+}
+
+
+.destaque input[type=text]
+{
+  width: 90%;
+  padding: 10px;
+  border: 1px solid rgb(96,0,0);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.destaque .botao{  
+  width: 150px;
+  padding: 10px;
+  color : rgb(96,0,0);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+table, th, td
+{
+  border : 1px solid rgb(96,0,0);
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+table
+{
+  margin : auto;
+}
+
