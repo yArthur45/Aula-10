@@ -42,11 +42,11 @@ app.post('/alunos',(req, res) => {
 app.get('/alunos', (req, res) => {
     const sql = 'SELECT * FROM alunos';
 
-    db.query(sql, (err, result) => {
+    db.query(sql, (err, results) => {
         if (err) {
-            return res.status(500).json({error: 'Erro ao consultar alunos'});
+            return res.status(500).json({error: 'Erro ao consultar alunos' });
         }
-        res.json(result);
+        res.json(results);
     });
 });
 app.listen(PORT, () => {
